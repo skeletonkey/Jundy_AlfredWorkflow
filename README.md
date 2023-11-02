@@ -1,4 +1,4 @@
-# Jundy_AlfredWorkflow
+# Jundy AlfredWorkflow
 
 Perl Module to help with creating Alfred Workflows.
 
@@ -18,9 +18,29 @@ Manual installation steps will be added once best practices become apparent.
 
 ## Functionality
 
-The base module currently only exists to provide the current version number.
+The base module currently only exists to provide the version number.
 
 ### Submodules
+
+#### Filter
+
+Functions to help the Script Filter object.
+
+##### display
+
+Take in a list and print out the item list for the filtered drop down.
+
+```perl
+my $data = {
+    empty => { title => 'No notes found', subtitle => 'Please try a different search'},
+    data => [
+        { title => "one", subtitle => "1", arg => ".1", },
+        { title => "two", subtitle => "2", arg => ".2", },
+        { title => "three", subtitle => "3", },
+    ],
+};
+Jundy::AlfredWorkflow::Filter::display($data);
+```
 
 #### HTTP
 
