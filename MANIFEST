@@ -2,5 +2,6 @@ Makefile.PL
 MANIFEST
 README.md
 lib/Jundy/AlfredWorkflow.pm
+lib/Jundy/AlfredWorkflow/Filter.pm
 lib/Jundy/AlfredWorkflow/HTTP.pm
 t/http.t
